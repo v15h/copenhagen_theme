@@ -37,6 +37,13 @@
           "value": "#1F73B7"
         },
         {
+          "identifier": "visited_link_color",
+          "type": "color",
+          "description": "visited_link_color_description",
+          "label": "visited_link_color_label",
+          "value": "#4B61C3"
+        },
+        {
           "identifier": "background_color",
           "type": "color",
           "description": "background_color_description",

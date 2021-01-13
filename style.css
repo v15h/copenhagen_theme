@@ -637,7 +637,7 @@ ul {
 }
 
 .form .suggestion-list li a:visited {
-  color: $link_color;
+  color: $visited_link_color;
 }
 
 /***** Header *****/
@@ -1637,7 +1637,7 @@ ul {
 }
 
 .article-body a:visited {
-  color: $link_color;
+  color: $visited_link_color;
 }
 
 .article-body code {
@@ -2096,7 +2096,7 @@ ul {
 }
 
 .comment-body a:visited {
-  color: $link_color;
+  color: $visited_link_color;
 }
 
 .comment-body code {
@@ -2404,7 +2404,7 @@ ul {
 }
 
 .striped-list-title:visited {
-  color: $link_color;
+  color: $visited_link_color;
 }
 
 .striped-list .meta-group {
@@ -2671,7 +2671,7 @@ ul {
 }
 
 .post-body a:visited {
-  color: $link_color;
+  color: $visited_link_color;
 }
 
 .post-body code {
