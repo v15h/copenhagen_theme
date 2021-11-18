@@ -699,7 +699,25 @@ ul {
   margin: 20px;
 }
 
-.nav-wrapper a {
+@media (max-width: 768px) {
+  .nav-wrapper-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-wrapper-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-wrapper-desktop {
+    display: inline-block;
+  }
+}
+
+.nav-wrapper-desktop a {
   border: 0;
   color: $link_color;
   display: none;
@@ -709,71 +727,48 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .nav-wrapper a {
+  .nav-wrapper-desktop a {
     display: inline-block;
   }
 }
 
-[dir="rtl"] .nav-wrapper a {
+[dir="rtl"] .nav-wrapper-desktop a {
   padding: 0 0 0 20px;
 }
 
-.nav-wrapper a:hover, .nav-wrapper a:focus, .nav-wrapper a:active {
+.nav-wrapper-desktop a:hover, .nav-wrapper-desktop a:focus, .nav-wrapper-desktop a:active {
   background-color: transparent;
   color: $link_color;
   text-decoration: underline;
 }
 
-.nav-wrapper a.sign-in {
+.nav-wrapper-desktop a.sign-in {
   display: inline-block;
 }
 
-@media (max-width: 768px) {
-  .nav-wrapper .hide-on-mobile {
-    border: 0;
-    clip: rect(0 0 0 0);
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
-  }
-}
-
-.nav-wrapper .menu-button {
-  background: none;
-  border: 0;
-  color: $link_color;
-  display: inline-block;
-  margin-right: 10px;
-  padding: 0;
-  width: auto;
-}
-
-@media (min-width: 768px) {
-  .nav-wrapper .menu-button {
+@media (min-width: 1024px) {
+  .nav-wrapper-mobile {
     display: none;
   }
 }
 
-.nav-wrapper .menu-button .icon-menu {
-  vertical-align: middle;
-  width: 13px;
-  height: 13px;
+.nav-wrapper-mobile .menu-list-mobile {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+  border: solid 1px #ddd;
+  right: 0;
+  left: 0;
+  top: 71px;
+  z-index: 1;
 }
 
-[dir="rtl"] .nav-wrapper .menu-button {
-  margin-left: 10px;
-  margin-right: 0;
+.nav-wrapper-mobile .menu-list-mobile[aria-expanded="false"] {
+  display: none;
 }
 
-.nav-wrapper .menu-button:hover, .nav-wrapper .menu-button:focus, .nav-wrapper .menu-button:active {
-  background-color: transparent;
-  color: $link_color;
+.nav-wrapper-mobile .menu-list-mobile[aria-expanded="true"] {
+  display: block;
 }
 
 .skip-navigation {
