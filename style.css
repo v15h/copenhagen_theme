@@ -4858,3 +4858,57 @@ html[dir="rtl"] .notification-left-aligned {
 .dropdown-chevron-icon {
   vertical-align: middle;
 }
+
+/***** Custom Styles *****/
+
+body {
+  position: relative;
+}
+
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width. */
+}
+
+/* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
+.aspect-ratio iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: none;
+}
+
+.callout {
+  margin: 0 0 20px 0;
+  padding: 15px 30px 15px 15px;
+  border-left: 5px solid #eee;
+  background-color: #FCF3E1;
+  border-color: #fcb322;
+
+}
+
+.article-body ol li {
+  margin-bottom: 2em;
+}
+
+@media print
+{
+  header.header,
+  nav.sub-nav,
+  aside.article-sidebar,
+  div.article-author,
+  div.article-subscribe,
+  footer,
+  div.article-relatives,
+  div.article-comments,
+  iframe#launcher,
+  iframe,
+  video
+  {
+    display:none;
+  }
+}

@@ -3,7 +3,9 @@
 <header class="header">
   <div class="logo">
     {{#link 'help_center'}}
-      <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}" />
+        <a href="https://log1cics.com">
+            <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
+        </a>
       {{#if settings.show_brand_name}}
         <span aria-hidden="true">{{help_center.name}}</span>
       {{/if}}
@@ -13,6 +15,7 @@
   <div class="nav-wrapper-desktop">
     <nav class="user-nav" id="user-nav">
       <ul class="user-nav-list">
+          <li><a href="https://log1cics.com"> &larr; Back to Log1c ICS </a></li>
         <li>{{link 'community'}}</li>
         <li>{{link 'new_request' class='submit-a-request'}}</li>
         {{#unless signed_in}}
