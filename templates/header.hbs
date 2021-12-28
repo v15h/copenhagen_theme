@@ -14,11 +14,11 @@
                     fields: [
                         {
                             id: 27056967,
-                            prefill: {'*': session.name + session.customer_num + document.title }
+                            prefill: {'*': `${session.name} #${session.customer_num} ${document.title}` }
                         },
                         {
                             id: 360009299094,
-                            prefill: {'*': Navigator.userAgent}
+                            prefill: {'*': window.navigator.userAgent}
                         }
                     ]
                 }
