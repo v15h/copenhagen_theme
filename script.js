@@ -395,12 +395,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  $('.article-body img.fancybox').on('click', function() {
-    $.fancybox.open([
-      {
-        src : $(this).attr("src"),
-        opts : {},
-      },
-    ]);
-  });
+  mediumZoom('[data-zoomable]')
 });
