@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Dropdowns
-  
+
   function Dropdown(toggle, menu) {
     this.toggle = toggle;
     this.menu = menu;
@@ -393,5 +393,14 @@ document.addEventListener('DOMContentLoaded', function() {
         dropdown.dismiss();
       }
     });
+  });
+
+  $('.article-body img.fancybox').on('click', function() {
+    $.fancybox.open([
+      {
+        src : $(this).attr("src"),
+        opts : {},
+      },
+    ]);
   });
 });
