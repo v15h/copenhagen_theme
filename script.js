@@ -395,5 +395,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  mediumZoom('[data-zoomable]')
+  mediumZoom('.article-container img')
 });
