@@ -90,7 +90,10 @@
 
       <section class="article-info">
         <div class="article-content">
-          <div class="article-body">{{article.body}}</div>
+          <div class="article-body">
+              <ul id="toc"></ul>
+              {{article.body}}
+          </div>
           {{#if attachments}}
             <div class="article-attachments">
               <ul class="attachments">

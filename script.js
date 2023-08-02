@@ -395,5 +395,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  mediumZoom('.article-container img')
+  mediumZoom('.article-container img');
+
+  $("#toc").toc({content: ".article-body", headings: "h1,h2,h3,h4"});
 });
