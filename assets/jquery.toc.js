@@ -72,7 +72,7 @@
                     return elem.is(selector) ? index : undefined;
                 })[0];
 
-                console.log(elem.text());
+                // console.log(elem.text());
 
                 if (elem.text().trim() === '') return;
 
@@ -95,7 +95,7 @@
 
                 // Add the list item
                 $("<li/>").appendTo(stack[0]).append(
-                    $("<a/>").text(elem.text().replace(/:$/, '')).attr("href", "#" + elem.attr("id"))
+                    $("<a/>").text(elem.text().trim().replace(/:$/, '')).attr("href", "#" + elem.attr("id"))
                 );
 
                 currentLevel = level;
